@@ -118,7 +118,6 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  customCSS: ["css/custom.css"]
   description: "Hi!, Welcome to my site."
   author: K21
   # author: ["Me", "You"] # multiple authors
@@ -239,10 +238,10 @@ markup:
   highlight:
     noClasses: false
     # anchorLineNos: true
-     codeFences: true
-     guessSyntax: true
-     lineNos: true
-     style: monokai
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
 
 # privacy:
 #   vimeo:
