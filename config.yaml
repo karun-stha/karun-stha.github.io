@@ -179,7 +179,7 @@ params:
       url: "https://tryhackme.com/p/SzIxCg"
     - name: hackthebox
       title: HackTheBox
-      url: "app.hackthebox.com/profile/2049605"
+      url: "https://app.hackthebox.com/profile/2049605"
     - name: ctftime
       title: CTFtime
       url: "https://ctftime.org/user/203933"
