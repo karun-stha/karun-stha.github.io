@@ -9,9 +9,9 @@ Tags:
 - Linux
 - Easy
 
+---
 cover:
   image: "feature.png"
-
 ---
 
 | Link: | [https://app.hackthebox.com/machines/Dog](https://app.hackthebox.com/machines/Dog) |
