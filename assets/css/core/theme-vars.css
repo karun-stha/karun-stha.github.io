@@ -1,7 +1,8 @@
-/* =========================
-   Global Variables
-   ========================= */
+/* =========================================
+   DARK PURPLE THEME — FULL FILE
+   ========================================= */
 
+/* ---------- Light (fallback) ---------- */
 :root {
     --gap: 24px;
     --content-gap: 20px;
@@ -11,39 +12,40 @@
     --footer-height: 60px;
     --radius: 8px;
 
-    /* Light – Soft Purple Theme */
-    --theme: rgb(252, 250, 255);
-    --entry: rgb(248, 245, 252);
-    --primary: rgb(45, 35, 75);
-    --secondary: rgb(120, 110, 150);
-    --tertiary: rgb(220, 215, 235);
-    --content: rgb(50, 45, 70);
+    /* Light lavender fallback */
+    --theme: rgb(245, 242, 255);
+    --entry: rgb(240, 235, 252);
+    --primary: rgb(50, 40, 85);
+    --secondary: rgb(125, 115, 160);
+    --tertiary: rgb(215, 210, 235);
+    --content: rgb(55, 50, 75);
 
-    --code-block-bg: rgb(238, 232, 248);
-    --code-bg: rgb(244, 240, 252);
-    --border: rgb(225, 218, 240);
+    --code-block-bg: rgb(235, 228, 248);
+    --code-bg: rgb(240, 235, 252);
+    --border: rgb(215, 208, 235);
 }
 
-/* =========================
-   Dark Mode – Purple Night
-   ========================= */
-
+/* ---------- Ultra Dark Purple ---------- */
 .dark {
-    --theme: rgb(16, 14, 22);
-    --entry: rgb(20, 18, 28);
-    --primary: rgb(220, 215, 235);
-    --secondary: rgb(170, 165, 190);
-    --tertiary: rgb(36, 32, 48);
-    --content: rgb(200, 195, 215);
+    /* Backgrounds */
+    --theme: rgb(8, 6, 14);              /* almost black purple */
+    --entry: rgb(12, 9, 22);
+    --code-bg: rgb(14, 10, 28);
+    --code-block-bg: rgb(14, 10, 28);
 
-    --code-block-bg: rgb(26, 24, 36);
-    --code-bg: rgb(26, 24, 36);
-    --border: rgb(55, 50, 75);
+    /* Text */
+    --primary: rgb(215, 205, 255);       /* glowing lavender */
+    --content: rgb(185, 175, 225);
+    --secondary: rgb(145, 135, 185);
+
+    /* UI */
+    --tertiary: rgb(26, 20, 44);
+    --border: rgb(55, 45, 85);
 }
 
-/* =========================
-   Base Styles
-   ========================= */
+/* =========================================
+   BASE
+   ========================================= */
 
 * {
     box-sizing: border-box;
@@ -51,92 +53,116 @@
 
 body {
     margin: 0;
-    padding: 0;
     background: var(--theme);
     color: var(--content);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                 Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.6;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Ubuntu, Cantarell, Arial, sans-serif;
+    line-height: 1.65;
 }
 
-/* =========================
-   Containers
-   ========================= */
+/* =========================================
+   CONTAINERS
+   ========================================= */
 
 .entry {
     background: var(--entry);
+    border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: var(--content-gap);
-    border: 1px solid var(--border);
 }
 
 .list {
     background: var(--code-bg);
+    border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: var(--content-gap);
-    border: 1px solid var(--border);
 }
 
 .dark .list {
     background: var(--theme);
 }
 
-/* =========================
-   Text Styles
-   ========================= */
+/* =========================================
+   TYPOGRAPHY
+   ========================================= */
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--primary);
-    margin-top: 0;
+    letter-spacing: 0.02em;
 }
 
 p {
     color: var(--content);
 }
 
-small, .muted {
+.muted,
+small {
     color: var(--secondary);
 }
 
-/* =========================
-   Links
-   ========================= */
+/* =========================================
+   LINKS (PURPLE GLOW)
+   ========================================= */
 
 a {
-    color: rgb(140, 120, 220);
+    color: rgb(170, 140, 255);
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: rgb(195, 170, 255);
+    text-shadow: 0 0 6px rgba(170, 140, 255, 0.35);
 }
 
-/* =========================
-   Code Blocks
-   ========================= */
+/* =========================================
+   CODE — TERMINAL VIBE
+   ========================================= */
 
-pre, code {
+pre,
+code {
     background: var(--code-block-bg);
-    color: var(--primary);
-    border-radius: var(--radius);
+    color: rgb(210, 200, 255);
     font-family: "JetBrains Mono", "Fira Code", monospace;
+    border-radius: var(--radius);
 }
 
 pre {
     padding: var(--content-gap);
     overflow-x: auto;
+    border: 1px solid var(--border);
 }
 
 code {
     padding: 0.2em 0.4em;
 }
 
-/* =========================
-   Borders & Dividers
-   ========================= */
+/* =========================================
+   DIVIDERS
+   ========================================= */
 
 hr {
     border: none;
     border-top: 1px solid var(--border);
     margin: var(--gap) 0;
+}
+
+/* =========================================
+   OPTIONAL: SCROLLBAR (DARK PURPLE)
+   ========================================= */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(10, 8, 18);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(70, 55, 120);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(95, 75, 160);
 }
