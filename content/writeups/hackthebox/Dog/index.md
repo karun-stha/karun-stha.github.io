@@ -9,7 +9,6 @@ Tags:
 - Linux
 - Easy
 
----
 cover:
   image: "feature.png"
 ---
