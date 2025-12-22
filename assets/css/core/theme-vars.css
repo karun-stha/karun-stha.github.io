@@ -1,8 +1,3 @@
-/* =========================================
-   DARK PURPLE THEME — FULL FILE
-   ========================================= */
-
-/* ---------- Light (fallback) ---------- */
 :root {
     --gap: 24px;
     --content-gap: 20px;
@@ -12,157 +7,41 @@
     --footer-height: 60px;
     --radius: 8px;
 
-    /* Light lavender fallback */
-    --theme: rgb(245, 242, 255);
-    --entry: rgb(240, 235, 252);
-    --primary: rgb(50, 40, 85);
-    --secondary: rgb(125, 115, 160);
+    /* Light (slightly lavender, still neutral) */
+    --theme: rgb(250, 248, 255);
+    --entry: rgb(248, 245, 252);
+    --primary: rgb(35, 30, 55);
+    --secondary: rgb(110, 105, 135);
     --tertiary: rgb(215, 210, 235);
-    --content: rgb(55, 50, 75);
-
-    --code-block-bg: rgb(235, 228, 248);
-    --code-bg: rgb(240, 235, 252);
-    --border: rgb(215, 208, 235);
+    --content: rgb(40, 35, 60);
+    --code-block-bg: rgb(240, 235, 250);
+    --code-bg: rgb(245, 242, 252);
+    --border: rgb(225, 220, 240);
 }
 
-/* ---------- Ultra Dark Purple ---------- */
 .dark {
-    /* Backgrounds */
-    --theme: rgb(8, 6, 14);              /* almost black purple */
-    --entry: rgb(12, 9, 22);
-    --code-bg: rgb(14, 10, 28);
-    --code-block-bg: rgb(14, 10, 28);
+    /* Deep dark purple (NOT pure black → avoids broken pages) */
+    --theme: rgb(12, 10, 20);
+    --entry: rgb(16, 14, 26);
 
     /* Text */
-    --primary: rgb(215, 205, 255);       /* glowing lavender */
-    --content: rgb(185, 175, 225);
-    --secondary: rgb(145, 135, 185);
+    --primary: rgb(220, 215, 240);
+    --secondary: rgb(165, 160, 195);
+    --content: rgb(200, 195, 220);
 
-    /* UI */
-    --tertiary: rgb(26, 20, 44);
-    --border: rgb(55, 45, 85);
-}
+    /* UI layers */
+    --tertiary: rgb(30, 26, 46);
+    --border: rgb(60, 55, 90);
 
-/* =========================================
-   BASE
-   ========================================= */
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    background: var(--theme);
-    color: var(--content);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont,
-                 "Segoe UI", Roboto, Ubuntu, Cantarell, Arial, sans-serif;
-    line-height: 1.65;
-}
-
-/* =========================================
-   CONTAINERS
-   ========================================= */
-
-.entry {
-    background: var(--entry);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: var(--content-gap);
+    /* Code / list backgrounds */
+    --code-block-bg: rgb(20, 18, 32);
+    --code-bg: rgb(20, 18, 32);
 }
 
 .list {
     background: var(--code-bg);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: var(--content-gap);
 }
 
-.dark .list {
+.dark.list {
     background: var(--theme);
-}
-
-/* =========================================
-   TYPOGRAPHY
-   ========================================= */
-
-h1, h2, h3, h4, h5, h6 {
-    color: var(--primary);
-    letter-spacing: 0.02em;
-}
-
-p {
-    color: var(--content);
-}
-
-.muted,
-small {
-    color: var(--secondary);
-}
-
-/* =========================================
-   LINKS (PURPLE GLOW)
-   ========================================= */
-
-a {
-    color: rgb(170, 140, 255);
-    text-decoration: none;
-}
-
-a:hover {
-    color: rgb(195, 170, 255);
-    text-shadow: 0 0 6px rgba(170, 140, 255, 0.35);
-}
-
-/* =========================================
-   CODE — TERMINAL VIBE
-   ========================================= */
-
-pre,
-code {
-    background: var(--code-block-bg);
-    color: rgb(210, 200, 255);
-    font-family: "JetBrains Mono", "Fira Code", monospace;
-    border-radius: var(--radius);
-}
-
-pre {
-    padding: var(--content-gap);
-    overflow-x: auto;
-    border: 1px solid var(--border);
-}
-
-code {
-    padding: 0.2em 0.4em;
-}
-
-/* =========================================
-   DIVIDERS
-   ========================================= */
-
-hr {
-    border: none;
-    border-top: 1px solid var(--border);
-    margin: var(--gap) 0;
-}
-
-/* =========================================
-   OPTIONAL: SCROLLBAR (DARK PURPLE)
-   ========================================= */
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: rgb(10, 8, 18);
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgb(70, 55, 120);
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(95, 75, 160);
 }
