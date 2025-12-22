@@ -9,7 +9,6 @@ Tags:
 - Windows
 - Medium
 
----
 cover:
   image: "feature.png"
 ---
