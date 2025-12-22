@@ -1,3 +1,7 @@
+/* =========================
+   Global Variables
+   ========================= */
+
 :root {
     --gap: 24px;
     --content-gap: 20px;
@@ -6,33 +10,133 @@
     --header-height: 60px;
     --footer-height: 60px;
     --radius: 8px;
-    --theme: rgb(255, 255, 255);
-    --entry: rgb(255, 255, 255);
-    --primary: rgb(30, 30, 30);
-    --secondary: rgb(108, 108, 108);
-    --tertiary: rgb(214, 214, 214);
-    --content: rgb(31, 31, 31);
-    --code-block-bg: rgb(28, 29, 33);
-    --code-bg: rgb(245, 245, 245);
-    --border: rgb(238, 238, 238);
+
+    /* Light – Soft Purple Theme */
+    --theme: rgb(252, 250, 255);
+    --entry: rgb(248, 245, 252);
+    --primary: rgb(45, 35, 75);
+    --secondary: rgb(120, 110, 150);
+    --tertiary: rgb(220, 215, 235);
+    --content: rgb(50, 45, 70);
+
+    --code-block-bg: rgb(238, 232, 248);
+    --code-bg: rgb(244, 240, 252);
+    --border: rgb(225, 218, 240);
 }
 
+/* =========================
+   Dark Mode – Purple Night
+   ========================= */
+
 .dark {
-    --theme: rgb(13, 13, 14);
-    --entry: rgb(17, 17, 17);
-    --primary: rgb(218, 218, 219);
-    --secondary: rgb(155, 156, 157);
-    --tertiary: rgb(29, 31, 31);
-    --content: rgb(196, 196, 197);
-    --code-block-bg: rgb(27, 27, 29);
-    --code-bg: rgb(27, 27, 29);
-    --border: rgb(51, 51, 51);
+    --theme: rgb(16, 14, 22);
+    --entry: rgb(20, 18, 28);
+    --primary: rgb(220, 215, 235);
+    --secondary: rgb(170, 165, 190);
+    --tertiary: rgb(36, 32, 48);
+    --content: rgb(200, 195, 215);
+
+    --code-block-bg: rgb(26, 24, 36);
+    --code-bg: rgb(26, 24, 36);
+    --border: rgb(55, 50, 75);
+}
+
+/* =========================
+   Base Styles
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--theme);
+    color: var(--content);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* =========================
+   Containers
+   ========================= */
+
+.entry {
+    background: var(--entry);
+    border-radius: var(--radius);
+    padding: var(--content-gap);
+    border: 1px solid var(--border);
 }
 
 .list {
     background: var(--code-bg);
+    border-radius: var(--radius);
+    padding: var(--content-gap);
+    border: 1px solid var(--border);
 }
 
-.dark.list {
+.dark .list {
     background: var(--theme);
+}
+
+/* =========================
+   Text Styles
+   ========================= */
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary);
+    margin-top: 0;
+}
+
+p {
+    color: var(--content);
+}
+
+small, .muted {
+    color: var(--secondary);
+}
+
+/* =========================
+   Links
+   ========================= */
+
+a {
+    color: rgb(140, 120, 220);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   Code Blocks
+   ========================= */
+
+pre, code {
+    background: var(--code-block-bg);
+    color: var(--primary);
+    border-radius: var(--radius);
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+}
+
+pre {
+    padding: var(--content-gap);
+    overflow-x: auto;
+}
+
+code {
+    padding: 0.2em 0.4em;
+}
+
+/* =========================
+   Borders & Dividers
+   ========================= */
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: var(--gap) 0;
 }
