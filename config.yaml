@@ -47,6 +47,9 @@ languages:
         - name: Tags
           url: tags/
           weight: 25
+        - name: Notes
+          url: notes/
+          weight: 25
 
 #  fr:
 #    languageName: ":fr:"
@@ -152,6 +155,8 @@ params:
         url: archives
       - name: Tags
         url: tags
+      - name: Notes
+        url: notes
 
   homeInfoParams:
     Title: "PaperMod's Demo"
