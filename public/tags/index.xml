@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on K21</title>
+    <link>https://karun-stha.github.io/tags/</link>
+    <description>Recent content in Tags on K21</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 22 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://karun-stha.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HackTheBox</title>
+      <link>https://karun-stha.github.io/tags/hackthebox/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://karun-stha.github.io/tags/hackthebox/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Medium</title>
+      <link>https://karun-stha.github.io/tags/medium/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://karun-stha.github.io/tags/medium/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Windows</title>
+      <link>https://karun-stha.github.io/tags/windows/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://karun-stha.github.io/tags/windows/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Easy</title>
+      <link>https://karun-stha.github.io/tags/easy/</link>
+      <pubDate>Sun, 17 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://karun-stha.github.io/tags/easy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://karun-stha.github.io/tags/linux/</link>
+      <pubDate>Sun, 17 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://karun-stha.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

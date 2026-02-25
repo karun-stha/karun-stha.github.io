@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HackTheBox on K21</title>
+    <link>https://karun-stha.github.io/writeups/hackthebox/</link>
+    <description>Recent content in HackTheBox on K21</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 22 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://karun-stha.github.io/writeups/hackthebox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Puppy Writeup - HackTheBox</title>
+      <link>https://karun-stha.github.io/writeups/hackthebox/puppy/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://karun-stha.github.io/writeups/hackthebox/puppy/</guid>
+      <description>This was a really good and fun room.</description>
+    </item>
+    <item>
+      <title>Dog</title>
+      <link>https://karun-stha.github.io/writeups/hackthebox/dog/</link>
+      <pubDate>Sun, 17 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://karun-stha.github.io/writeups/hackthebox/dog/</guid>
+      <description>This was a really good and fun room.</description>
+    </item>
+  </channel>
+</rss>
